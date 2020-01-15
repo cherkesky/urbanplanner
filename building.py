@@ -31,7 +31,7 @@ Example
 import datetime
 
 class Building:
-  def __init__(self, owner, address, stories):
+  def __init__(self, address, stories):
     self.designer = "Guy Cherkesky"
     self.address = address
     self.stories = stories
@@ -42,8 +42,12 @@ class Building:
   def purchase(self, owner):
     self.owner = owner
 
+  def print_building(self):
+    print(f'{self.address} was purchased by {self.owner} on {self.date_constructed} and has {self.stories} stories')
 
-
-
+dwell = Building("1234 2nd Ave S", "2")
+dwell.construct()
+dwell.purchase("Bill Gates")
+dwell.print_building()
 
 
