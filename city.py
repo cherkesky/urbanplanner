@@ -16,5 +16,5 @@ class City:
     self.year_established = year_established
     self.city_buildings = list()
 
-  def addBuildings(building):
+  def addBuildings(self, building):
     self.city_buildings.append(building)
