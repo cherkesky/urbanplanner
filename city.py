@@ -9,3 +9,12 @@ A method to add a building to the city.
 Remember, each class should be in its own file. Define the City class in the city.py file.
 '''
 
+class City:
+  def __init__ (self, name, mayor, year_established):
+    self.name = name
+    self.mayor = mayor
+    self.year_established = year_established
+    self.city_buildings = list()
+
+  def addBuildings(building):
+    self.city_buildings.append(building)
